@@ -56,7 +56,7 @@ public class NQueens {
 
     public static void main(String[] args) {
         NQueens nq = new NQueens();
-        int n = 5;
+        int n = 6;
         List<List<String>> solutions = nq.solveNQueens(n);
         for (List<String> solution : solutions) {
             for (String row : solution) {
