@@ -22,7 +22,7 @@ public class NQueens {
             if (isSafe(board, row, col)) {
                 board[row][col] = 'Q';
                 solve(solutions, board, row + 1);
-                board[row][col] = '.';
+                board[row][col] = '▄';
             }
         }
     }
@@ -56,7 +56,7 @@ public class NQueens {
 
     public static void main(String[] args) {
         NQueens nq = new NQueens();
-        int n = 5; // Example for 4-queens problem
+        int n = 5;
         List<List<String>> solutions = nq.solveNQueens(n);
         for (List<String> solution : solutions) {
             for (String row : solution) {
